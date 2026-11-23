@@ -21,6 +21,19 @@
    - 或用指令：`adb install -r -g MR_Throw.apk`（另外兩個同理）
 5. **開始玩**：頭盔 應用程式庫 → 篩選改成「未知來源」
 
+## 一次裝很多台（Windows 10 / 11，學校電腦）
+
+1. 這個頁面右上綠色「**Code → Download ZIP**」，下載後**解壓縮**（在 ZIP 上按右鍵 →「解壓縮全部」，不要直接在 ZIP 裡面執行）
+2. 頭盔：開發者模式已開、已重新開機、設定 → 開發者 → 關閉「Link 自動連線」
+3. 用能傳資料的 USB-C 線把頭盔接上電腦（電腦有幾個 USB 孔就能同時接幾台）
+4. 戴上每一台頭盔，按「**允許 USB 偵錯**」並勾「一律允許這台電腦」
+5. 雙擊解壓縮資料夾裡的 **`install_all.bat`**
+   - 第一次會自動下載 adb 工具和 3 個 APK（約 260 MB，需要網路）
+   - 跳出「Windows 已保護您的電腦」：按「其他資訊」→「仍要執行」
+6. 等它顯示每台頭盔 `3/3`（綠色）就完成；換下一批頭盔，再雙擊一次
+
+**電腦一直說找不到頭盔**：先戴上頭盔看有沒有「允許 USB 偵錯」；還是不行，安裝 Meta 的 [Oculus ADB Drivers](https://developers.meta.com/horizon/downloads/package/oculus-adb-drivers/)（要系統管理員權限），或改用 Meta Quest Developer Hub 拖拉安裝。
+
 ## 一次裝很多台（Mac）
 
 1. 下載這個專案：右上「Code → Download ZIP」，解壓縮
